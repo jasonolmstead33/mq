@@ -12,8 +12,8 @@ import (
 	"github.com/urfave/cli"
 	"golang.org/x/crypto/acme/autocert"
 
-	"github.com/drone/mq/logger"
-	"github.com/drone/mq/server"
+	"github.com/jasonolmstead33/mq/logger"
+	"github.com/jasonolmstead33/mq/server"
 )
 
 var comandServe = cli.Command{

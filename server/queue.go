@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/drone/mq/stomp"
+	"github.com/jasonolmstead33/mq/stomp"
 )
 
 type queue struct {

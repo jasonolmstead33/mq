@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/drone/mq/logger"
-	"github.com/drone/mq/stomp"
-	"github.com/drone/mq/stomp/selector"
+	"github.com/jasonolmstead33/mq/logger"
+	"github.com/jasonolmstead33/mq/stomp"
+	"github.com/jasonolmstead33/mq/stomp/selector"
 )
 
 // session represents a single client session (ie connection)

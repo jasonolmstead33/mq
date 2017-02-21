@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"sync"
 
-	"github.com/drone/mq/stomp"
+	"github.com/jasonolmstead33/mq/stomp"
 )
 
 // topic is a type of destination handler that implements a

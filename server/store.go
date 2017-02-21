@@ -3,7 +3,7 @@ package server
 // http://oldblog.antirez.com/post/redis-persistence-demystified.html
 
 import (
-	"github.com/drone/mq/stomp"
+	"github.com/jasonolmstead33/mq/stomp"
 
 	"github.com/syndtr/goleveldb/leveldb"
 )

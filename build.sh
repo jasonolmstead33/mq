@@ -1,16 +1,18 @@
 #!/bin/sh
+
+#this message 
 export CGO_ENABLED=0
 
 set -e
 set -x
 
 # compile lgtm for all architectures
-GOOS=linux   GOARCH=amd64 go build -o ./release/linux_amd64/mq   github.com/drone/mq/cmd/mq
-GOOS=linux   GOARCH=386   go build -o ./release/linux_386/mq     github.com/drone/mq/cmd/mq
-GOOS=linux   GOARCH=arm   go build -o ./release/linux_arm/mq     github.com/drone/mq/cmd/mq
-GOOS=darwin  GOARCH=amd64 go build -o ./release/darwin_amd64/mq  github.com/drone/mq/cmd/mq
-GOOS=windows GOARCH=386   go build -o ./release/windows_386/mq   github.com/drone/mq/cmd/mq
-GOOS=windows GOARCH=amd64 go build -o ./release/windows_amd64/mq github.com/drone/mq/cmd/mq
+GOOS=linux   GOARCH=amd64 go build -o ./release/linux_amd64/mq   github.com/jasonolmstead33/mq/cmd/mq
+GOOS=linux   GOARCH=386   go build -o ./release/linux_386/mq     github.com/jasonolmstead33/mq/cmd/mq
+GOOS=linux   GOARCH=arm   go build -o ./release/linux_arm/mq     github.com/jasonolmstead33/mq/cmd/mq
+GOOS=darwin  GOARCH=amd64 go build -o ./release/darwin_amd64/mq  github.com/jasonolmstead33/mq/cmd/mq
+GOOS=windows GOARCH=386   go build -o ./release/windows_386/mq   github.com/jasonolmstead33/mq/cmd/mq
+GOOS=windows GOARCH=amd64 go build -o ./release/windows_amd64/mq github.com/jasonolmstead33/mq/cmd/mq
 
 # tar binary files prior to upload
 tar -cvzf release/mq_linux_amd64.tar.gz   --directory=release/linux_amd64   mq
